@@ -2,12 +2,54 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Алексей Новиков — инженер интерфейсов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>Валерий Зиновьев — инженер интерфейсов</title>
+    <meta name="description" content="Портфолио инженера интерфейсов Валерия Зиновьева. Frontend-архитектура, React, TypeScript, WebGL, дизайн-системы. Проекты с исходным кодом и Figma-макетами.">
+    <meta name="keywords" content="инженер интерфейсов, frontend разработчик, React, TypeScript, UI архитектура, дизайн-системы, портфолио, WebGL, Валерий Зиновьев">
+    <meta name="author" content="Валерий Зиновьев">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    <meta name="revisit-after" content="7 days">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="https://valeryzinoviev.dev">
+    <meta property="og:title" content="Валерий Зиновьев — инженер интерфейсов">
+    <meta property="og:description" content="Системная инженерия интерфейсов. React, TypeScript, WebGL. Проекты с открытым кодом и Figma.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valeryzinoviev.dev">
+    <meta property="og:image" content="https://picsum.photos/id/26/1200/630">
+    <meta property="og:site_name" content="Валерий Зиновьев — инженер интерфейсов">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Валерий Зиновьев — инженер интерфейсов">
+    <meta name="twitter:description" content="Портфолио frontend-инженера. Архитектура UI, компонентные системы, 3D-конфигураторы.">
+    <meta name="twitter:image" content="https://picsum.photos/id/26/1200/630">
+    <meta name="twitter:creator" content="@zinoviev_eng">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <meta name="theme-color" content="#111111">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Валерий Зиновьев",
+        "alternateName": "Valery Zinoviev",
+        "jobTitle": "Frontend Engineer / UI Architect",
+        "url": "https://valerytech.world",
+        "sameAs": [
+            "https://github.com/dudl1/"
+        ],
+        "knowsAbout": ["React", "TypeScript", "WebGL", "Design Systems", "State Management", "Three.js"],
+        "description": "Инженер интерфейсов, специализирующийся на системной архитектуре, производительности и компонентном подходе.",
+        "image": "https://picsum.photos/id/26/800/800"
+        }
+    </script>
     <style>
         * {
+            -webkit-tap-highlight-color: transparent;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -22,7 +64,6 @@
             overflow-x: hidden;
         }
 
-        /* Page transition container */
         .page-container {
             position: relative;
             width: 100%;
@@ -257,7 +298,7 @@
         }
 
         .projects {
-            padding: 5rem 0;
+            padding: 5rem 0 3rem;
             background: #ffffff;
             border-bottom: 1px solid #eaeaea;
         }
@@ -266,10 +307,75 @@
             font-size: 1.8rem;
             font-weight: 500;
             letter-spacing: -0.3px;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1rem;
             color: #111;
             border-left: 3px solid #111;
             padding-left: 1rem;
+        }
+
+        /* TAPBAR стили */
+        .tapbar-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tapbar {
+            display: flex;
+            background: #f5f5f5;
+            border-radius: 60px;
+            padding: 0.3rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        .tapbar-btn {
+            background: transparent;
+            border: none;
+            padding: 0.65rem 1.8rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 40px;
+            transition: all 0.2s ease;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .tapbar-btn i {
+            font-size: 0.9rem;
+        }
+
+        .tapbar-btn.active {
+            background: #ffffff;
+            color: #000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .info-mini-btn {
+            background: transparent;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #555;
+            transition: all 0.2s;
+            margin-left: 4px;
+            font-size: 0.8rem;
+        }
+
+        .info-mini-btn:hover {
+            background: #111;
+            color: white;
+            border-color: #111;
         }
 
         .projects-grid {
@@ -341,6 +447,138 @@
             letter-spacing: 1px;
             color: #6b6b6b;
             font-family: monospace;
+        }
+
+        /* Кнопка скачивания файлов — стили */
+        .download-files-btn {
+            margin-top: 0.75rem;
+            background: #f5f5f5;
+            border: 1px solid #e2e2e2;
+            padding: 0.45rem 0.8rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            font-family: 'Inter', monospace;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+            color: #2c2c2c;
+            border-radius: 24px;
+            width: auto;
+        }
+        
+        .download-files-btn i {
+            font-size: 0.75rem;
+        }
+        
+        .download-files-btn:hover {
+            background: #111;
+            border-color: #111;
+            color: white;
+            transform: translateY(-2px);
+            gap: 0.7rem;
+        }
+
+        /* Preview tabs & container */
+        .preview-section {
+            margin: 2rem 0 3rem;
+            border: 1px solid #eaeaea;
+            background: #fefefe;
+        }
+        .preview-tabs {
+            display: flex;
+            gap: 0.5rem;
+            border-bottom: 1px solid #eaeaea;
+            padding: 0.5rem 1rem 0;
+            background: #fafafa;
+        }
+        .preview-tab-btn {
+            background: transparent;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            font-family: 'Inter', monospace;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: #555;
+            transition: 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+        .preview-tab-btn.active {
+            color: #111;
+            border-bottom-color: #111;
+            background: #fff;
+        }
+        .preview-tab-btn:hover:not(.active) {
+            color: #000;
+            background: #f0f0f0;
+        }
+        .preview-pane {
+            display: none;
+            position: relative;
+            background: #f9f9f9;
+            min-height: 500px;
+            width: 100%;
+        }
+        .preview-pane.active-pane {
+            display: block;
+        }
+        .iframe-wrapper, .figma-wrapper {
+            width: 100%;
+            height: 65vh;
+            min-height: 450px;
+            position: relative;
+            background: #f0f0f0;
+        }
+        .iframe-wrapper iframe, .figma-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(8px);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+            z-index: 20;
+            font-family: monospace;
+        }
+        .fullscreen-btn:hover {
+            background: #111;
+            transform: scale(1.05);
+        }
+        .empty-preview-msg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            min-height: 300px;
+            background: #f5f5f5;
+            color: #aaa;
+            font-family: monospace;
+            font-size: 0.9rem;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .badge-placeholder {
+            background: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            font-size: 0.7rem;
         }
 
         .modal {
@@ -630,7 +868,7 @@
             position: fixed;
             bottom: 2rem;
             left: 2rem;
-            background: #111;
+            background: #11111188;
             color: white;
             border: none;
             padding: 0.8rem 1.5rem;
@@ -645,7 +883,7 @@
         }
 
         .back-btn:hover {
-            background: #333;
+            background: #111;
             transform: translateX(-4px);
         }
 
@@ -671,6 +909,12 @@
                 padding: 0.5rem 1rem;
                 font-size: 0.7rem;
             }
+            .iframe-wrapper, .figma-wrapper {
+                height: 50vh;
+            }
+            .tapbar-container {
+                justify-content: space-between;
+            }
         }
         
         ::selection {
@@ -687,6 +931,26 @@
             background: #111;
             z-index: 1001;
             transition: width 0.1s ease;
+        }
+
+        .explain-toast {
+            position: fixed;
+            margin: 0 20px;
+            bottom: 30px;
+            /* left: 10%; */
+            /* transform: translateX(-10%); */
+            background: #111;
+            color: white;
+            padding: 0.5rem 1.0rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-family: monospace;
+            z-index: 9999;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            border: 1px solid #333;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -731,6 +995,20 @@
         <section class="projects" id="projectsSection">
             <div class="container">
                 <h2 class="section-title">Инженерные решения</h2>
+                
+                <div class="tapbar-container">
+                    <div class="tapbar">
+                        <button class="tapbar-btn active" data-tap="projects">
+                            <i class="fas fa-briefcase"></i> Проекты
+                            <i class="fas fa-info info-mini-btn" data-explain="projects" style="width: 20px; height: 20px;"></i>
+                        </button>
+                        <button class="tapbar-btn" data-tap="pet">
+                            <i class="fas fa-flask"></i> Пет-проекты
+                            <i class="fas fa-info info-mini-btn" data-explain="pet" style="width: 20px; height: 20px;"></i>
+                        </button>
+                    </div>
+                </div>
+
                 <div class="projects-grid" id="projectsGrid"></div>
             </div>
         </section>
@@ -799,275 +1077,268 @@
     <i class="fas fa-arrow-left"></i> Назад к портфолио
 </button>
 
-<script>
-    const projectsList = [
-        { 
-            id: 1, 
-            title: "Core UI System", 
-            category: "design system / react", 
-            thumb: "https://picsum.photos/id/26/600/400", 
-            fullImg: "https://picsum.photos/id/26/800/500", 
-            description: "Атомарная библиотека компонентов с нулевым оверхедом. Поддержка тем, tree-shaking, документация через Storybook.", 
-            tech: "React, TypeScript, CSS Modules, Vitest, Storybook",
-            projectHtml: `
-                <div style="max-width: 900px; margin: 0 auto; padding: 3rem 2rem;">
-                    <div style="margin-bottom: 2rem;">
-                        <span style="font-family: monospace; color: #666;">design system</span>
-                        <h1 style="font-size: 3rem; font-weight: 600; margin: 0.5rem 0;">Core UI System</h1>
-                    </div>
-                    <img src="https://picsum.photos/id/26/900/400" style="width: 100%; border-radius: 4px; margin-bottom: 2rem;">
-                    <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">React</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">TypeScript</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">Storybook</span>
-                    </div>
-                    <p style="line-height: 1.6; color: #333;">Атомарная библиотека компонентов с нулевым оверхедом. Поддержка тем, tree-shaking, документация через Storybook. Полностью типобезопасная архитектура с автоматической генерацией документации.</p>
-                    <div style="margin-top: 2rem; padding: 1rem; background: #f8f8f8; border-left: 3px solid #111;">
-                        <strong>Ключевые особенности:</strong><br>
-                        • 40+ переиспользуемых компонентов<br>
-                        • Accessibility-first подход<br>
-                        • Поддержка SSR и микро-фронтендов<br>
-                        • Визуальное тестирование через Chromatic
-                    </div>
-                </div>
-            `
-        },
-        { 
-            id: 2, 
-            title: "Vector State", 
-            category: "state management", 
-            thumb: "https://picsum.photos/id/155/600/400", 
-            fullImg: "https://picsum.photos/id/155/800/500", 
-            description: "Микро-библиотека для управления сложными состояниями с предсказуемыми мутациями и отладкой в реальном времени.", 
-            tech: "Zustand, Immer, TypeScript, DevTools",
-            projectHtml: `
-                <div style="max-width: 900px; margin: 0 auto; padding: 3rem 2rem;">
-                    <div style="margin-bottom: 2rem;">
-                        <span style="font-family: monospace; color: #666;">state management</span>
-                        <h1 style="font-size: 3rem; font-weight: 600; margin: 0.5rem 0;">Vector State</h1>
-                    </div>
-                    <img src="https://picsum.photos/id/155/900/400" style="width: 100%; border-radius: 4px; margin-bottom: 2rem;">
-                    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">Zustand</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">TypeScript</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">Immer</span>
-                    </div>
-                    <p style="line-height: 1.6; color: #333;">Микро-библиотека для управления сложными состояниями с предсказуемыми мутациями и отладкой в реальном времени. Размер — всего 3kb gzipped.</p>
-                    <div style="margin-top: 2rem; padding: 1rem; background: #f8f8f8; border-left: 3px solid #111;">
-                        <strong>Технические детали:</strong><br>
-                        • Иммутабельные обновления через Immer<br>
-                        • Middleware для логирования и отладки<br>
-                        • Интеграция с React DevTools<br>
-                        • Оптимизированная подписка на селекторы
-                    </div>
-                </div>
-            `
-        },
-        { 
-            id: 3, 
-            title: "Spatial Configurator", 
-            category: "webgl / 3d", 
-            thumb: "https://picsum.photos/id/104/600/400", 
-            fullImg: "https://picsum.photos/id/104/800/500", 
-            description: "3D-конфигуратор с физически корректным рендерингом, оптимизированный для мобильных устройств и high-end GPU.", 
-            tech: "Three.js, WebGL, React Fiber, GLSL",
-            projectHtml: `
-                <div style="max-width: 900px; margin: 0 auto; padding: 3rem 2rem;">
-                    <div style="margin-bottom: 2rem;">
-                        <span style="font-family: monospace; color: #666;">webgl / 3d</span>
-                        <h1 style="font-size: 3rem; font-weight: 600; margin: 0.5rem 0;">Spatial Configurator</h1>
-                    </div>
-                    <img src="https://picsum.photos/id/104/900/400" style="width: 100%; border-radius: 4px; margin-bottom: 2rem;">
-                    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">Three.js</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">WebGL</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">React Fiber</span>
-                    </div>
-                    <p style="line-height: 1.6; color: #333;">3D-конфигуратор с физически корректным рендерингом, оптимизированный для мобильных устройств и high-end GPU. Поддержка HDR-освещения и PBR-материалов.</p>
-                    <div style="margin-top: 2rem; padding: 1rem; background: #f8f8f8; border-left: 3px solid #111;">
-                        <strong>Особенности реализации:</strong><br>
-                        • Кастомные шейдеры для эффектов<br>
-                        • LOD-система для производительности<br>
-                        • Web Worker для тяжелых вычислений<br>
-                        • Адаптивная загрузка текстур
-                    </div>
-                </div>
-            `
-        },
-        { 
-            id: 4, 
-            title: "Protocol Metrics", 
-            category: "analytics / dashboard", 
-            thumb: "https://picsum.photos/id/20/600/400", 
-            fullImg: "https://picsum.photos/id/20/800/500", 
-            description: "Панель мониторинга производительности с кастомными графиками и WebSocket-стримингом данных.", 
-            tech: "D3, Next.js, WebSockets, Tailwind",
-            projectHtml: `
-                <div style="max-width: 900px; margin: 0 auto; padding: 3rem 2rem;">
-                    <div style="margin-bottom: 2rem;">
-                        <span style="font-family: monospace; color: #666;">analytics / dashboard</span>
-                        <h1 style="font-size: 3rem; font-weight: 600; margin: 0.5rem 0;">Protocol Metrics</h1>
-                    </div>
-                    <img src="https://picsum.photos/id/20/900/400" style="width: 100%; border-radius: 4px; margin-bottom: 2rem;">
-                    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">D3.js</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">Next.js</span>
-                        <span style="background: #f0f0f0; padding: 0.3rem 0.8rem; font-size: 0.8rem;">WebSockets</span>
-                    </div>
-                    <p style="line-height: 1.6; color: #333;">Панель мониторинга производительности с кастомными графиками и WebSocket-стримингом данных. Реалтайм обновление метрик с минимальной задержкой.</p>
-                    <div style="margin-top: 2rem; padding: 1rem; background: #f8f8f8; border-left: 3px solid #111;">
-                        <strong>Архитектура:</strong><br>
-                        • Серверные компоненты для SEO<br>
-                        • Инкрементальная статическая регенерация<br>
-                        • Оптимизированная визуализация больших данных<br>
-                        • Система алертов и уведомлений
-                    </div>
-                </div>
-            `
-        }
-    ];
+<div id="explainToast" class="explain-toast"></div>
 
-    let currentProject = null;
-    let isTransitioning = false;
-    
-    const mainPage = document.getElementById('mainPage');
-    const projectPage = document.getElementById('projectPage');
-    const backBtn = document.getElementById('backToMainBtn');
-    const modal = document.getElementById('projectModal');
-    
-    function renderProjects() {
+<script>
+    let projectsList = [];
+
+    fetch('/projectsList.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Не удалось загрузить projectsList.json');
+            }
+            return response.json();
+        })
+        .then(data => {
+            projectsList = data;
+            // После загрузки данных инициализируем всё остальное
+            initApp();
+        })
+        .catch(error => {
+            console.error('Ошибка загрузки данных:', error);
+            // fallback на случай ошибки
+            projectsList = [];
+            initApp();
+        });
+
+    function initApp() {
+        let currentFilter = 'projects';
         const grid = document.getElementById('projectsGrid');
-        grid.innerHTML = '';
-        projectsList.forEach(proj => {
-            const card = document.createElement('div');
-            card.className = 'project-card';
-            card.dataset.projectId = proj.id;
-            card.innerHTML = `<div class="project-thumb" style="background-image: url('${proj.thumb}');"></div><div class="project-info"><div class="project-title">${proj.title}</div><div class="project-category">${proj.category}</div></div>`;
-            card.addEventListener('click', () => openModal(proj));
-            grid.appendChild(card);
+        const tapbarBtns = document.querySelectorAll('.tapbar-btn');
+        const infoMiniBtns = document.querySelectorAll('.info-mini-btn');
+        const explainToast = document.getElementById('explainToast');
+
+        function renderFilteredProjects() {
+            const filtered = projectsList.filter(p => 
+                currentFilter === 'projects' ? p.type === 'project' : p.type === 'pet'
+            );
+            grid.innerHTML = '';
+            if (filtered.length === 0) {
+                grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:2rem; color:#aaa; font-family:monospace;">Нет кейсов в этом разделе</div>`;
+                return;
+            }
+            filtered.forEach(proj => {
+                const card = document.createElement('div');
+                card.className = 'project-card';
+                card.dataset.projectId = proj.id;
+                card.innerHTML = `<div class="project-thumb" style="background-image: url('${proj.thumb}');"></div>
+                                  <div class="project-info"><div class="project-title">${proj.title}</div>
+                                  <div class="project-category">${proj.category}</div></div>`;
+                card.addEventListener('click', () => openModal(proj));
+                grid.appendChild(card);
+            });
+        }
+
+        tapbarBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tap = btn.dataset.tap;
+                currentFilter = tap;
+                tapbarBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderFilteredProjects();
+                showToast(tap === 'projects' ? '📁 Проекты' : '🧪 Пет-проекты');
+            });
         });
-    }
-    
-    function openModal(project) {
-        if (modal.style.display === 'flex') return;
-        currentProject = project;
-        const modalThumb = document.getElementById('modalThumb');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalCategory = document.getElementById('modalCategory');
-        const modalDescription = document.getElementById('modalDescription');
-        const modalTechStack = document.getElementById('modalTechStack');
+
+        infoMiniBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const type = btn.dataset.explain;
+                let msg = '';
+                if (type === 'projects') {
+                    msg = '📌 Проекты: коммерческие и продуктовые разработки, архитектурные решения.';
+                } else {
+                    msg = '🧪 Пет-проекты: эксперименты, прототипы, изучение новых технологий, опенсорс.';
+                }
+                explainToast.style.opacity = '1';
+                explainToast.textContent = msg;
+                setTimeout(() => explainToast.style.opacity = '0', 2500);
+            });
+        });
+
+        // ----- остальной код (почти без изменений) -----
+        function downloadProjectFiles(project) {
+            if (project.downloadProject) window.open(project.downloadProject, '_blank');
+        }
+
+        function generateProjectPreviewHtml(project) {
+            const hasIframe = project.iframeSrc && project.iframeSrc.trim() !== "";
+            const hasFigma = project.figmaSrc && project.figmaSrc.trim() !== "";
+            const iframeContent = hasIframe ? `<div class="iframe-wrapper" id="iframeWrapper"><iframe src="${project.iframeSrc}" title="iframe preview" allowfullscreen></iframe><button class="fullscreen-btn" data-fullscreen="iframe"><i class="fas fa-expand"></i></button></div>` : `<div class="empty-preview-msg"><i class="fas fa-code-branch"></i><span>Нет встроенного iframe</span><div class="badge-placeholder">—</div></div>`;
+            const figmaContent = hasFigma ? `<div class="figma-wrapper" id="figmaWrapper"><iframe src="${project.figmaSrc}" title="figma preview" allowfullscreen></iframe><button class="fullscreen-btn" data-fullscreen="figma"><i class="fas fa-expand"></i></button></div>` : `<div class="empty-preview-msg"><i class="fab fa-figma"></i><span>Нет встроенного Figma-превью</span><div class="badge-placeholder">—</div></div>`;
+            let defaultTab = "iframe";
+            if (!hasIframe && hasFigma) defaultTab = "figma";
+            if (!hasIframe && !hasFigma) defaultTab = "none";
+            
+            return `
+                <div style="max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem;">
+                    <div style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <span style="font-family: monospace; color: #666;">${project.category}</span>
+                            <h1 style="font-size: 3rem; font-weight: 600; margin: 0.5rem 0;">${project.title}</h1>
+                        </div>
+                        ${project.downloadFiles === "yes" ? `<button class="download-files-btn" id="downloadSourceBtn" data-project-id="${project.id}" ><i class="fas fa-download"></i> Скачать исходники</button>` : ''}
+                    </div>
+                    <p style="line-height: 1.6; color: #333; margin-bottom: 2rem;">${project.description}</p>
+                    <div class="preview-section">
+                        <div class="preview-tabs">
+                            ${hasIframe ? `<button class="preview-tab-btn ${defaultTab === 'iframe' ? 'active' : ''}" data-tab="iframe">📄 iframe превью</button>` : ''}
+                            ${hasFigma ? `<button class="preview-tab-btn ${defaultTab === 'figma' ? 'active' : ''}" data-tab="figma">🎨 Figma макет</button>` : ''}
+                            ${!hasIframe && !hasFigma ? `<span style="padding: 0.6rem 1.2rem; color:#aaa;">Нет доступных превью</span>` : ''}
+                        </div>
+                        <div class="preview-pane ${hasIframe && defaultTab === 'iframe' ? 'active-pane' : ''}" data-pane="iframe">${iframeContent}</div>
+                        <div class="preview-pane ${hasFigma && defaultTab === 'figma' ? 'active-pane' : ''}" data-pane="figma">${figmaContent}</div>
+                    </div>
+                    <div style="margin-top: 2rem; padding: 1rem; background: #f8f8f8; border-left: 3px solid #111;">
+                        <strong>📌 Полноэкранный режим:</strong> нажмите на кнопку <i class="fas fa-expand"></i> в правом нижнем углу панели.
+                    </div>
+                </div>
+            `;
+        }
         
-        modalThumb.style.backgroundImage = `url('${project.fullImg}')`;
-        modalTitle.innerText = project.title;
-        modalCategory.innerText = project.category;
-        modalDescription.innerText = project.description;
-        modalTechStack.innerText = `⚙️ стек: ${project.tech}`;
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-        setTimeout(() => modal.classList.add('active'), 10);
-    }
-    
-    function closeModal() {
-        if (!modal.style.display || modal.style.display === 'none') return;
-        modal.classList.remove('active');
-        setTimeout(() => {
-            modal.style.display = 'none';
-            document.body.style.overflow = '';
-        }, 200);
-    }
-    
-    function navigateToProject() {
-        if (isTransitioning || !currentProject) return;
-        isTransitioning = true;
-        closeModal();
+        projectsList.forEach(proj => { proj.projectHtml = generateProjectPreviewHtml(proj); });
+
+        let currentProject = null;
+        let isTransitioning = false;
+        const mainPage = document.getElementById('mainPage');
+        const projectPage = document.getElementById('projectPage');
+        const backBtn = document.getElementById('backToMainBtn');
+        const modal = document.getElementById('projectModal');
         
-        projectPage.innerHTML = currentProject.projectHtml;
+        function openModal(project) {
+            if (modal.style.display === 'flex') return;
+            currentProject = project;
+            document.getElementById('modalThumb').style.backgroundImage = `url('${project.fullImg}')`;
+            document.getElementById('modalTitle').innerText = project.title;
+            document.getElementById('modalCategory').innerText = project.category;
+            document.getElementById('modalDescription').innerText = project.description;
+            document.getElementById('modalTechStack').innerText = `⚙️ стек: ${project.tech}`;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => modal.classList.add('active'), 10);
+        }
         
-        mainPage.classList.add('slide-out-left');
-        projectPage.style.display = 'block';
-        projectPage.classList.add('slide-in-right');
+        function closeModal() {
+            if (!modal.style.display || modal.style.display === 'none') return;
+            modal.classList.remove('active');
+            setTimeout(() => { modal.style.display = 'none'; document.body.style.overflow = ''; }, 200);
+        }
         
-        setTimeout(() => {
-            projectPage.classList.remove('slide-in-right');
-            projectPage.classList.add('active-page');
-            mainPage.classList.remove('active-page');
+        function attachPreviewEvents() {
+            const tabBtns = document.querySelectorAll('#projectPage .preview-tab-btn');
+            const panes = document.querySelectorAll('#projectPage .preview-pane');
+            tabBtns.forEach(btn => {
+                btn.removeEventListener('click', handleTabClick);
+                btn.addEventListener('click', handleTabClick);
+            });
+            function handleTabClick(e) {
+                const tab = e.currentTarget.dataset.tab;
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+                panes.forEach(pane => pane.classList.remove('active-pane'));
+                const activePane = document.querySelector(`#projectPage .preview-pane[data-pane="${tab}"]`);
+                if(activePane) activePane.classList.add('active-pane');
+            }
+            const fullBtns = document.querySelectorAll('#projectPage .fullscreen-btn');
+            fullBtns.forEach(btn => {
+                btn.removeEventListener('click', handleFullscreen);
+                btn.addEventListener('click', handleFullscreen);
+            });
+            function handleFullscreen(e) {
+                const type = e.currentTarget.dataset.fullscreen;
+                const wrapper = type === 'iframe' ? document.querySelector('#projectPage .iframe-wrapper') : document.querySelector('#projectPage .figma-wrapper');
+                if (wrapper && wrapper.requestFullscreen) wrapper.requestFullscreen();
+                showToast('📺 полноэкранный режим');
+            }
+            const downloadBtn = document.querySelector('#projectPage #downloadSourceBtn');
+            if(downloadBtn && currentProject) {
+                downloadBtn.removeEventListener('click', downloadHandler);
+                downloadBtn.addEventListener('click', downloadHandler);
+                function downloadHandler(e) {
+                    e.stopPropagation();
+                    if(currentProject) downloadProjectFiles(currentProject);
+                    else showToast('❌ Ошибка');
+                }
+            }
+        }
+        
+        function navigateToProject() {
+            if (isTransitioning || !currentProject) return;
+            isTransitioning = true;
+            closeModal();
+            projectPage.innerHTML = currentProject.projectHtml;
             mainPage.classList.add('slide-out-left');
-            mainPage.style.display = 'none';
-            backBtn.style.display = 'flex';
-            document.body.style.overflow = '';
-            window.scrollTo(0, 0);
-            isTransitioning = false;
-        }, 500);
-    }
-    
-    function navigateBackToMain() {
-        if (isTransitioning) return;
-        isTransitioning = true;
+            projectPage.style.display = 'block';
+            projectPage.classList.add('slide-in-right');
+            setTimeout(() => {
+                projectPage.classList.remove('slide-in-right');
+                projectPage.classList.add('active-page');
+                mainPage.classList.remove('active-page');
+                mainPage.style.display = 'none';
+                backBtn.style.display = 'flex';
+                window.scrollTo(0, 0);
+                attachPreviewEvents();
+                isTransitioning = false;
+            }, 500);
+        }
         
-        mainPage.style.display = 'block';
-        mainPage.classList.remove('slide-out-left');
-        mainPage.classList.add('slide-in-right');
-        projectPage.classList.remove('active-page');
-        projectPage.classList.add('slide-out-left');
+        function navigateBackToMain() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            mainPage.style.display = 'block';
+            mainPage.classList.remove('slide-out-left');
+            mainPage.classList.add('slide-in-right');
+            projectPage.classList.remove('active-page');
+            projectPage.classList.add('slide-out-left');
+            setTimeout(() => {
+                mainPage.classList.remove('slide-in-right');
+                mainPage.classList.add('active-page');
+                projectPage.classList.remove('slide-out-left');
+                projectPage.style.display = 'none';
+                backBtn.style.display = 'none';
+                window.scrollTo(0, 0);
+                isTransitioning = false;
+            }, 500);
+        }
         
-        setTimeout(() => {
-            mainPage.classList.remove('slide-in-right');
-            mainPage.classList.add('active-page');
-            projectPage.classList.remove('slide-out-left');
-            projectPage.style.display = 'none';
-            backBtn.style.display = 'none';
-            window.scrollTo(0, 0);
-            isTransitioning = false;
-        }, 500);
+        document.querySelector('.modal-close').addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
+        document.getElementById('goToProjectBtn').addEventListener('click', navigateToProject);
+        backBtn.addEventListener('click', navigateBackToMain);
+        
+        // toast и остальная мелочь
+        function showToast(msg) {
+            const toast = document.getElementById('toastMsg');
+            toast.textContent = msg;
+            toast.style.opacity = '1';
+            setTimeout(() => toast.style.opacity = '0.7', 1500);
+        }
+        
+        document.getElementById('triggerCube').addEventListener('click', () => showToast('🧩 модульная архитектура'));
+        document.getElementById('triggerPoly').addEventListener('click', () => showToast('📐 геометрия интерфейсов'));
+        document.getElementById('triggerChip').addEventListener('click', () => showToast('🔧 low-level оптимизации'));
+        
+        let likes = 0;
+        const likeBtn = document.getElementById('likeBtn');
+        const likeCounter = document.getElementById('likeCounter');
+        likeBtn.addEventListener('click', () => { likes++; likeCounter.innerText = likes; showToast(`+1 инженерное одобрение (${likes})`); });
+        const colorSwatch = document.getElementById('colorSwatch');
+        const randomBtn = document.getElementById('randomColorBtn');
+        const getSmartColor = () => `hsl(${Math.floor(Math.random() * 360)}, 45%, 48%)`;
+        randomBtn.addEventListener('click', () => { colorSwatch.style.backgroundColor = getSmartColor(); showToast('акцент обновлён'); });
+        colorSwatch.style.backgroundColor = '#2c2c2c';
+        colorSwatch.addEventListener('click', () => { colorSwatch.style.backgroundColor = getSmartColor(); showToast('кастомизация'); });
+        window.addEventListener('scroll', () => { const winScroll = document.documentElement.scrollTop; const height = document.documentElement.scrollHeight - window.innerHeight; const scrolled = (winScroll / height) * 100; document.getElementById('scrollProgress').style.width = scrolled + '%'; });
+        document.querySelectorAll('.contact-line').forEach(line => { line.addEventListener('click', () => { const type = line.dataset.contact; if (type === 'email') { navigator.clipboard?.writeText('a.novikov@engine.dev'); alert('✉️ Email скопирован'); } else if (type === 'phone') { navigator.clipboard?.writeText('+79168204433'); alert('📞 Телефон скопирован'); } else if (type === 'telegram') { window.open('https://t.me/novikov_eng', '_blank'); } showToast('контакт'); }); });
+        const links = { githubLink: 'https://github.com/dudl1/', behanceLink: 'https://behance.net/dudl1', linkedinLink: 'https://linkedin.com/in/dudl1' };
+        Object.entries(links).forEach(([id, url]) => { document.getElementById(id).addEventListener('click', (e) => { e.preventDefault(); window.open(url, '_blank'); showToast(id.replace('Link','')); }); });
+        document.getElementById('exploreBtn').addEventListener('click', () => { document.getElementById('projectsSection').scrollIntoView({ behavior: 'smooth' }); showToast('переход к инженерным решениям'); });
+        
+        // инициализация: рендер по умолчанию (проекты)
+        renderFilteredProjects();
+        projectPage.style.display = 'none';
     }
-    
-    document.querySelector('.modal-close').addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
-    
-    document.getElementById('goToProjectBtn').addEventListener('click', navigateToProject);
-    backBtn.addEventListener('click', navigateBackToMain);
-    
-    const toastSpan = document.getElementById('toastMsg');
-    function showToast(msg) { toastSpan.innerText = msg; setTimeout(() => { if (toastSpan) toastSpan.innerText = '⚡ готов к работе'; }, 1800); }
-    document.getElementById('triggerCube').addEventListener('click', () => showToast('🧩 модульная архитектура'));
-    document.getElementById('triggerPoly').addEventListener('click', () => showToast('📐 геометрия интерфейсов'));
-    document.getElementById('triggerChip').addEventListener('click', () => showToast('🔧 low-level оптимизации'));
-    
-    let likes = 0;
-    const likeBtn = document.getElementById('likeBtn');
-    const likeCounter = document.getElementById('likeCounter');
-    likeBtn.addEventListener('click', () => { likes++; likeCounter.innerText = likes; likeBtn.style.transform = 'scale(0.96)'; setTimeout(() => { if(likeBtn) likeBtn.style.transform = ''; }, 120); showToast(`+1 инженерное одобрение (${likes})`); });
-    
-    const colorSwatch = document.getElementById('colorSwatch');
-    const randomBtn = document.getElementById('randomColorBtn');
-    const getSmartColor = () => `hsl(${Math.floor(Math.random() * 360)}, 45%, 48%)`;
-    randomBtn.addEventListener('click', () => { colorSwatch.style.backgroundColor = getSmartColor(); showToast('акцент обновлён'); });
-    colorSwatch.style.backgroundColor = '#2c2c2c';
-    colorSwatch.addEventListener('click', () => { colorSwatch.style.backgroundColor = getSmartColor(); showToast('кастомизация'); });
-    
-    window.addEventListener('scroll', () => {
-        const winScroll = document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - window.innerHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.getElementById('scrollProgress').style.width = scrolled + '%';
-    });
-    
-    document.querySelectorAll('.contact-line').forEach(line => {
-        line.addEventListener('click', () => {
-            const type = line.dataset.contact;
-            if (type === 'email') { navigator.clipboard?.writeText('a.novikov@engine.dev'); alert('✉️ Email скопирован'); showToast('email в буфере'); }
-            else if (type === 'phone') { navigator.clipboard?.writeText('+79168204433'); alert('📞 Телефон скопирован'); showToast('телефон скопирован'); }
-            else if (type === 'telegram') { window.open('https://t.me/novikov_eng', '_blank'); showToast('telegram'); }
-        });
-    });
-    const links = { githubLink: 'https://github.com/novikov-eng', behanceLink: 'https://behance.net/novikoveng', linkedinLink: 'https://linkedin.com/in/novikov-eng' };
-    Object.entries(links).forEach(([id, url]) => { document.getElementById(id).addEventListener('click', (e) => { e.preventDefault(); window.open(url, '_blank'); showToast(id.replace('Link','')); }); });
-    
-    document.getElementById('exploreBtn').addEventListener('click', () => { document.getElementById('projectsSection').scrollIntoView({ behavior: 'smooth' }); showToast('переход к инженерным решениям'); });
-    
-    renderProjects();
-    projectPage.style.display = 'none';
 </script>
 </body>
 </html>
