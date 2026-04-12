@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Core UI System",
+    "category": "design system / react",
+    "type": "project",
+    "thumb": "https://picsum.photos/id/26/600/400",
+    "fullImg": "https://picsum.photos/id/26/800/500",
+    "description": "Атомарная библиотека компонентов с нулевым оверхедом. Поддержка тем, tree-shaking, документация через Storybook.",
+    "tech": "React, TypeScript, CSS Modules, Vitest, Storybook",
+    "iframeSrc": "https://www.w3schools.com/html/html5_intro.asp",
+    "figmaSrc": null,
+    "figmaFileUrl": "https://www.figma.com/file/coreUI/demo-design-system",
+    "downloadProject": "https://github.com/dudl1/volk-release/releases/download/v.1/volk.apk",
+    "downloadFiles": "yes"
+  },
+  {
+    "id": 2,
+    "title": "Protocol Metrics",
+    "category": "analytics / dashboard",
+    "type": "project",
+    "thumb": "https://picsum.photos/id/20/600/400",
+    "fullImg": "https://picsum.photos/id/20/800/500",
+    "description": "Панель мониторинга производительности с WebSocket.",
+    "tech": "D3, Next.js, WebSockets, Tailwind",
+    "iframeSrc": "https://example.com",
+    "figmaSrc": "https://www.figma.com/file/protocolMetrics/dashboard",
+    "figmaFileUrl": "https://www.figma.com/file/protocolMetrics/dashboard",
+    "downloadProject": "https://github.com/dudl1/volk-release/releases/download/v.1/volk.apk",
+    "downloadFiles": "yes"
+  },
+  {
+    "id": 3,
+    "title": "WebGL визуализатор частиц",
+    "category": "эксперимент / three.js",
+    "type": "pet",
+    "thumb": "https://picsum.photos/id/1043/600/400",
+    "fullImg": "https://picsum.photos/id/1043/800/500",
+    "description": "Интерактивная сцена с 100k частиц, шейдеры и постобработка.",
+    "tech": "Three.js, GLSL, Vite",
+    "iframeSrc": "https://threejs.org/examples/#webgl_points_billboards",
+    "figmaSrc": null,
+    "figmaFileUrl": null,
+    "downloadProject": "",
+    "downloadFiles": "no"
+  },
+  {
+    "id": 4,
+    "title": "Генератор ASCII-арта",
+    "category": "canvas / алгоритмы",
+    "type": "pet",
+    "thumb": "https://picsum.photos/id/15/600/400",
+    "fullImg": "https://picsum.photos/id/15/800/500",
+    "description": "Конвертация изображения в ASCII в реальном времени.",
+    "tech": "Canvas API, TypeScript",
+    "iframeSrc": null,
+    "figmaSrc": null,
+    "figmaFileUrl": null,
+    "downloadProject": "",
+    "downloadFiles": "no"
+  }
+]
