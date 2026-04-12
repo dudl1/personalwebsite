@@ -1082,7 +1082,7 @@
 <script>
     let projectsList = [];
 
-    fetch('/projectsList.json')
+    fetch('./projectsList.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Не удалось загрузить projectsList.json');
